@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Experience | PM Internship</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body { background:#f4f6f9; }
+        .card {
+            border-radius:16px;
+            box-shadow:0 6px 15px rgba(0,0,0,0.12);
+        }
+        .section-title {
+            font-weight:600;
+            color:#0d6efd;
+            margin-top:20px;
+        }
+        .form-control,.form-select {
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container my-5">
+    <div class="card p-4">
+
+        <h3 class="text-center text-primary mb-4">
+            <i class="fa fa-briefcase"></i> Interests & Preferences
+        </h3>
+
+        <form method="POST">
+
+            <!-- PM DOMAIN -->
+            <h5 class="section-title">Interested PM Domain</h5>
+            <select name="pm_domain" class="form-select" required>
+                <option value="">Select Domain</option>
+                <option>Tech Product</option>
+                <option>SaaS</option>
+                <option>EdTech</option>
+                <option>FinTech</option>
+                <option>E-commerce</option>
+            </select>
+
+            <!-- COMPANY TYPE -->
+            <h5 class="section-title mt-3">Preferred Company Type</h5>
+            <select name="company_type" class="form-select">
+                <option>Startup</option>
+                <option>MNC</option>
+                <option>Government / PSU</option>
+            </select>
+
+            <!-- DURATION -->
+            <h5 class="section-title mt-3">Internship Duration</h5>
+            <select name="duration" class="form-select">
+                <option>1 Month</option>
+                <option>3 Months</option>
+                <option>6 Months</option>
+            </select>
+
+            <!-- TECH SKILLS -->
+            <h5 class="section-title mt-3">Technical Skills</h5>
+            <input type="text" name="skills" class="form-control"
+                   placeholder="Excel, SQL, Python, User Research">
+
+            <!-- LINKS -->
+            <h5 class="section-title mt-3">Professional Links (Optional)</h5>
+            <input type="url" name="linkedin" class="form-control mb-2"
+                   placeholder="LinkedIn Profile">
+            <input type="url" name="portfolio" class="form-control"
+                   placeholder="Portfolio / GitHub">
+
+            <!-- ROLE FOCUS -->
+            <h5 class="section-title mt-3">Preferred Role Focus</h5>
+            <select name="role_focus" class="form-select">
+                <option>Product Research</option>
+                <option>Market Analysis</option>
+                <option>User Research</option>
+                <option>Roadmap Planning</option>
+                <option>Data / Analytics</option>
+                <option>Business Strategy</option>
+            </select>
+
+            <!-- TOOLS -->
+            <h5 class="section-title mt-3">Tools Familiarity</h5>
+            <input type="text" name="tools" class="form-control"
+                   placeholder="Excel, Figma, Jira, SQL, Power BI">
+
+            <!-- MODE -->
+            <h5 class="section-title mt-3">Internship Mode Preference</h5>
+            <select name="mode" class="form-select">
+                <option>Remote</option>
+                <option>On-site</option>
+                <option>Hybrid</option>
+            </select>
+
+            <!-- STIPEND -->
+            <h5 class="section-title mt-3">Stipend Preference</h5>
+            <select name="stipend" class="form-select">
+                <option>Paid</option>
+                <option>Unpaid</option>
+                <option>Any</option>
+            </select>
+
+            <!-- SUBMIT -->
+            <div class="text-center mt-4">
+                <button class="btn btn-success px-5">
+                    <i class="fa fa-magic"></i> Get Recommendations
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
